@@ -42,7 +42,7 @@ public class Runner {
 		while (count < interval) {
 			count++;
 			currentInterval++;
-			scraper.loadWindow("acahlberg", "5Fingerdp!", ticker);// username and password for account
+			scraper.loadWindow("", "", ticker);// username and password for account
 			scraper.recordBookViewer("C://Users/Aaron/Desktop/Master/" + ticker + "/AWP.txt", ticker, browserDelay);
 		}
 
