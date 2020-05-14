@@ -9,8 +9,8 @@ public class sendData {
 	 Connection connection = null;
 	 	static String databaseName = "crypto";
 	    static String username = "worker";
-	    static String password = "PierToPierWorker!@#";
-	    static String ip="104.197.97.234";
+	    static String password = "";
+	    static String ip="";
 	    static String port=":"+3306+"/";
 	    static ComboPooledDataSource dataSource=null;
 	    
