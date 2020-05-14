@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class sendOrder {
-	String systemID = "117308152";
+	String systemID = "";
 
 	public static void main(String[] args) {
 
@@ -51,7 +51,7 @@ public class sendOrder {
 
 	void buyToCoverMarketOrder(int numOfShares, String ticker) throws InterruptedException, IOException {
 		String buy = "http://www.collective2.com/cgi-perl/signal.mpl?" + "cmd=signal&" + "systemid=" + systemID + "&"
-				+ "pw=MorganB205&" + "action=BTC" + "&quant=" + numOfShares + "&instrument=stock&" + "symbol=" + ticker
+				+ "pw=&" + "action=BTC" + "&quant=" + numOfShares + "&instrument=stock&" + "symbol=" + ticker
 				+ "&" + "duration=DAY";
 		System.setProperty("webdriver.chrome.driver", "C://Users/Aaron/drivers/chromedriver.exe");
 		// Navigates to the specific URL
@@ -69,7 +69,7 @@ public class sendOrder {
 
 	void buyMarketOrder(int numOfShares, String ticker) throws InterruptedException, IOException {
 		String buy = "http://www.collective2.com/cgi-perl/signal.mpl?" + "cmd=signal&" + "systemid=" + systemID + "&"
-				+ "pw=MorganB205&" + "action=BTO" + "&quant=" + numOfShares + "&instrument=stock&" + "symbol=" + ticker
+				+ "pw=&" + "action=BTO" + "&quant=" + numOfShares + "&instrument=stock&" + "symbol=" + ticker
 				+ "&" + "duration=DAY";
 		System.setProperty("webdriver.chrome.driver", "C://Users/Aaron/drivers/chromedriver.exe");
 		// Navigates to the specific URL
@@ -92,7 +92,7 @@ public class sendOrder {
 
 	void sellMarketOrder(int numOfShares, String ticker) throws InterruptedException, IOException {
 		String sell = "http://www.collective2.com/cgi-perl/signal.mpl?" + "cmd=signal&" + "systemid=" + systemID + "&"
-				+ "pw=MorganB205&" + "action=STC" + "&quant=" + numOfShares + "&instrument=stock&" + "symbol=" + ticker
+				+ "pw=&" + "action=STC" + "&quant=" + numOfShares + "&instrument=stock&" + "symbol=" + ticker
 				+ "&" + "duration=DAY";
 		System.setProperty("webdriver.chrome.driver", "C://Users/Aaron/drivers/chromedriver.exe");
 		// Navigates to the specific URL
