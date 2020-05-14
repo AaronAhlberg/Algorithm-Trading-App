@@ -15,7 +15,7 @@ public class RobinHood {
 	public static void main(String[] args) throws IOException, ParseException,
 	InterruptedException, AWTException {
 		RobinHood test= new RobinHood();
-		test.logIn("ahlbergac@gmail.com", "5Fingerdp!");
+		test.logIn("", "");
 		test.buyStock("bks", 100);
 }
 void logIn(String username,String pswd) {
